@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0; /* Un fond clair pour faire ressortir l'image */
+  background-color: #f0f0f0; /* Fond gris clair pour une meilleure harmonie */
   color: #333;
   line-height: 1.6;
   padding: 20px;
@@ -18,7 +18,7 @@ body {
 
 /* Style pour la barre de navigation */
 nav {
-  background-color: #007bff; /* Une couleur vive pour la barre de navigation */
+  background-color: #007bff; /* Bleu vif pour la barre de navigation */
   padding: 1rem;
   text-align: center;
   width: 100%;
@@ -41,17 +41,17 @@ nav a:hover {
 
 /* Style pour l'image */
 img.logo {
-  max-width: 80%; /* Ajustez la taille de l'image */
+  max-width: 75%; /* Réduction de la taille de l'image à 75% */
   height: auto;
   margin-bottom: 20px;
-  border: 5px solid #007bff; /* Bordure colorée pour l'image */
+  border: 5px solid #007bff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour le texte */
 p {
-  text-align: center;
+  text-align: center; /* Centrage du texte */
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 20px;
