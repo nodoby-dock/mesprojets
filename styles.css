@@ -17,11 +17,25 @@ html, body {
 /* Style pour le body */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0; /* Fond gris clair pour une meilleure harmonie */
+  background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
   padding: 20px;
-  flex: 1; /* Permet au contenu de s'étirer */
+  display: flex; /* Ajout de display flex ici pour le pousse-pied */
+  flex-direction: column;
+  min-height: 100vh; /* Assure que le body prend au moins toute la hauteur de la vue */
+}
+
+/* Style pour le contenu principal (à ajouter si vous n'avez pas déjà un conteneur) */
+.main-content {
+  flex-grow: 1; /* Permet au contenu principal de s'étirer et de pousser le footer vers le bas */
+  width: 100%; /* Assurez-vous que le contenu prend toute la largeur disponible */
+  max-width: 1200px; /* Exemple de largeur maximale pour le contenu */
+  padding: 20px; /* Conservez le padding si nécessaire */
+  box-sizing: border-box; /* Important si vous avez des paddings ou bordures */
+  display: flex; /* Si vous voulez centrer le contenu horizontalement */
+  flex-direction: column; /* Si vous voulez que les éléments à l'intérieur soient en colonne */
+  align-items: center; /* Pour centrer horizontalement le contenu interne */
 }
 
 /* Style pour la barre de navigation */
@@ -77,10 +91,9 @@ footer {
   padding: 1rem;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
-  position: relative;
-  bottom: 0;
+  margin-top: auto; /* Pousse le footer vers le bas */
 }
+
 footer p {
   font-size: 1rem;
 }
