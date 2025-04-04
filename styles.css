@@ -41,7 +41,8 @@ nav a:hover {
 
 /* Style pour l'image */
 img.logo {
-  max-width: 25%; /* Réduction de la taille de l'image à 75% */
+  max-width: 33%; /* Réduction de la taille de l'image à 33% */
+  text-align: center; /* Centrage de l'image */
   height: auto;
   margin-bottom: 20px;
   border: 5px solid #007bff;
