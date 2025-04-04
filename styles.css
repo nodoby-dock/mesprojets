@@ -48,11 +48,14 @@ nav a:hover {
 }
 
 /* Style pour l'image */
-img.logo {
-  max-width: 33%; /* Réduction de la taille de l'image à 33% */
-  text-align: center; /* Centrage de l'image */
-  height: auto;
+.logo-container { /* Nouveau conteneur pour l'image */
+  text-align: center; /* Centre le contenu inline-block (l'image) */
   margin-bottom: 20px;
+}
+
+img.logo {
+  max-width: 33%;
+  height: auto;
   border: 5px solid #007bff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -64,7 +67,7 @@ p {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 20px;
-  flex: 1; /* Permet au contenu de s'étirer et pousser le footer vers le bas */
+/*flex: 1; /* Permet au contenu de s'étirer et pousser le footer vers le bas */
 }
 
 /* Style pour le footer */
