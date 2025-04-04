@@ -5,15 +5,23 @@
   box-sizing: border-box;
 }
 
+/* Mise en place d'une structure flex pour le body */
+html, body {
+  height: 100%; /* S'assure que le body prend toute la hauteur */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style pour le body */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0; /* Fond gris clair pour une meilleure harmonie */
   color: #333;
   line-height: 1.6;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1; /* Permet au contenu de s'étirer */
 }
 
 /* Style pour la barre de navigation */
@@ -56,6 +64,7 @@ p {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 20px;
+  flex: 1; /* Permet au contenu de s'étirer et pousser le footer vers le bas */
 }
 
 /* Style pour le footer */
@@ -66,8 +75,9 @@ footer {
   text-align: center;
   width: 100%;
   margin-top: 20px;
+  position: relative;
+  bottom: 0;
 }
-
 footer p {
   font-size: 1rem;
 }
